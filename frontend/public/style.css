@@ -1,0 +1,97 @@
+.select:focus{
+    outline: none;
+}
+
+.input:focus{
+    outline: none;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#guests, #guestscard, #vals {
+  border-radius: 0;
+  border-color: hsl(var(--bc)/var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+}
+
+#rb{
+  border-top-left-radius: 0;
+    border-top-right-radius: var(--rounded-btn,.5rem);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: var(--rounded-btn,.5rem);
+} 
+
+#lb{
+  border-top-right-radius: 0;
+    border-top-left-radius: var(--rounded-btn,.5rem);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: var(--rounded-btn,.5rem);
+}
+
+#gridfilter > div{
+  border-bottom-width: 1px;
+  --tw-border-opacity: 0.2;
+  border-color: hsl(var(--bc)/var(--tw-border-opacity));
+  padding: 1rem 0rem;
+}
+
+#gridfilter > div > h1{
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#cont{
+  position: relative;
+  min-height: calc(100vh - 7.5rem);
+}
+
+.menu :where(li:not(.disabled))>:where(:not(ul)) {
+  outline-offset: 2px;
+  outline: 2px solid #0000;
+  transition-property: color,background-color,border-color,-webkit-text-decoration-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+.menu :where(li:not(.menu-title):not(:empty))>:where(:not(ul).active), .menu :where(li:not(.menu-title):not(:empty))>:where(:not(ul):active) {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--bc)/var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--bc)/var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--b1)/var(--tw-text-opacity));
+}
+
+input:focus{
+
+  border-width: 2px !important;
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--in)/var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  transition: border-width 0.2s;
+  transition: border-color 0.2s;
+  transition-timing-function: ease-in;
+}
+
+input:hover{
+
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--in)/var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  transition: border-width 0.2s;
+  transition: border-color 0.2s;
+  transition-timing-function: ease-in;
+}
+
