@@ -1,3 +1,5 @@
+![](./Graphics/restifymain.gif)
+
 # Description
 An example website for short term rentals built using Django and React. Some parody data has been pre-loaded as a demonstration of its usage. The website can be hosted on the web, but currently is intended to be hosted locally as a means of demonstration rather than deployment.
 
